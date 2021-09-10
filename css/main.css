@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('AvenirLTStd-Book.woff2') format('woff2'),
+        url('AvenirLTStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Medium';
+    src: url('AvenirLTStd-Medium.woff2') format('woff2'),
+        url('AvenirLTStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Roman';
+    src: url('AvenirLTStd-Roman.woff2') format('woff2'),
+        url('AvenirLTStd-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+red { color: red; }
+
+.console-1 {
+  line-height: 1.2;
+  height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+.console-2 {
+  font-family: 'Avenir Medium';
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  background-image: url(../bg-black.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+button {
+  background-color: #279aff !important;
+  font-family: 'Avenir Medium';
+  border-radius: 4px;
+  letter-spacing: 0.25px;
+}
+
+.w-875 { width: 87.5% !important; }
+
+h1, h2, h3 { font-family: 'Avenir Book'; font-weight: 500; }
+
+p { color: #cacaca; }
+
+input, select {
+  text-align: center !important;
+  text-align-last: center !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+.w-75 { width: 90% !important; }
+
+body {
+  background-image: url(../bg-mobile.jpg);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #040714;
+  color: #f9f9f9;
+  font-family: 'Avenir Book' !important;
+}
+
+.CTS {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+
+  .w-75 { width: 75% !important; }
+
+  .w-875 { width: 62.5% !important; }
+
+  body {
+    background-image: url(../bg.jpg);
+    background-size: auto;
+  }
+ }
